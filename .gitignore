@@ -1,7 +1,5 @@
 
 # Compilaciones y archivos generados
-bin/
-obj/
 
 # Visual Studio
 .vs/
