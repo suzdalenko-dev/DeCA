@@ -1,15 +1,18 @@
 using Microsoft.AspNetCore.Mvc;
 
 [ApiController]
-[Route("[api/[controller]")]
+[Route("api/[controller]")]
 public class UserController : ControllerBase
 {
-    [HttpGet(Name = "login")]
+    // http://localhost:5006/api/user/login?email=alexey@gmail.com&password=123456
+    [HttpGet("login")]
     public IActionResult Login(string email, string password){
 
         return Ok(new { 
             date = DateTime.Now,
-            info = "Login successful" 
+            info = "Login successful",
+            email = email,
+            password = password
         });
     }
 }
