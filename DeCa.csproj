@@ -6,13 +6,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
 
-    <!-- Todas las compilaciones dentro de artifacts -->
-    <BaseOutputPath>artifacts/bin/</BaseOutputPath>
-
-    <!-- Archivos intermedios -->
-    <BaseIntermediateOutputPath>artifacts/obj/</BaseIntermediateOutputPath>
-
-    <!-- Publicación Release -->
+    <!-- Publicación -->
     <PublishDir>artifacts/bin/$(Configuration)/$(TargetFramework)/publish/</PublishDir>
 
   </PropertyGroup>
