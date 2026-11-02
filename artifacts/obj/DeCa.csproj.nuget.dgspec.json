@@ -11,7 +11,7 @@
         "projectName": "DeCa",
         "projectPath": "E:\\C#\\DeCa\\DeCa.csproj",
         "packagesPath": "C:\\Users\\alexey\\.nuget\\packages\\",
-        "outputPath": "E:\\C#\\DeCa\\obj\\",
+        "outputPath": "E:\\C#\\DeCa\\artifacts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\alexey\\AppData\\Roaming\\NuGet\\NuGet.Config"
