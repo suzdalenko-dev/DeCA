@@ -1,3 +1,4 @@
+
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
@@ -5,17 +6,19 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
 
-    <!-- Compilación fuera del proyecto -->
-    <BaseOutputPath>..\DeCa_Build\bin\</BaseOutputPath>
-    <BaseIntermediateOutputPath>..\DeCa_Build\obj\</BaseIntermediateOutputPath>
+    <!-- Todas las compilaciones dentro de artifacts -->
+    <BaseOutputPath>artifacts/bin/</BaseOutputPath>
 
-     <!-- Publicación también fuera -->
-    <PublishDir>..\DeCa_Build\bin\$(Configuration)\$(TargetFramework)\publish\</PublishDir>
+    <!-- Archivos intermedios -->
+    <BaseIntermediateOutputPath>artifacts/obj/</BaseIntermediateOutputPath>
+
+    <!-- Publicación Release -->
+    <PublishDir>artifacts/bin/$(Configuration)/$(TargetFramework)/publish/</PublishDir>
+
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.5" />
   </ItemGroup>
-
 
 </Project>
