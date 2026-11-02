@@ -1,8 +1,6 @@
 E:\C#\DeCa\artifacts\bin\Release\net10.0\publish\DeCa.exe
 E:\C#\DeCa\artifacts\bin\Release\net10.0\publish\appsettings.Development.json
 E:\C#\DeCa\artifacts\bin\Release\net10.0\publish\appsettings.json
-E:\C#\DeCa\artifacts\bin\Release\net10.0\publish\obj\DeCa.csproj.nuget.dgspec.json
-E:\C#\DeCa\artifacts\bin\Release\net10.0\publish\obj\project.assets.json
 E:\C#\DeCa\artifacts\bin\Release\net10.0\publish\DeCa.dll
 E:\C#\DeCa\artifacts\bin\Release\net10.0\publish\DeCa.deps.json
 E:\C#\DeCa\artifacts\bin\Release\net10.0\publish\DeCa.runtimeconfig.json

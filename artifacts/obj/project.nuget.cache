@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Mk8zwZdtyxk=",
+  "dgSpecHash": "X/d1M+3Ue14=",
   "success": true,
   "projectFilePath": "E:\\C#\\DeCa\\DeCa.csproj",
   "expectedPackageFiles": [
@@ -11,7 +11,7 @@
     {
       "code": "NU1903",
       "level": "Warning",
-      "message": "Package 'Microsoft.OpenApi' 2.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-v5pm-xwqc-g5wc",
+      "message": "El paquete \"Microsoft.OpenApi\" 2.0.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-v5pm-xwqc-g5wc",
       "projectPath": "E:\\C#\\DeCa\\DeCa.csproj",
       "warningLevel": 1,
       "filePath": "E:\\C#\\DeCa\\DeCa.csproj",
