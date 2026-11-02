@@ -4,19 +4,6 @@
     <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-
-
-        <!-- Salida de compilación -->
-    <BaseOutputPath>$(MSBuildThisFileDirectory)artifacts\bin\</BaseOutputPath>
-
-    <!-- Archivos intermedios -->
-    <BaseIntermediateOutputPath>$(MSBuildThisFileDirectory)artifacts\obj\</BaseIntermediateOutputPath>
-
-    <!-- Archivos de NuGet -->
-    <MSBuildProjectExtensionsPath>$(MSBuildThisFileDirectory)artifacts\obj\</MSBuildProjectExtensionsPath>
-
-    <!-- Evitar que los antiguos archivos de obj se compilen como código fuente -->
-    <DefaultItemExcludes>$(DefaultItemExcludes);obj\**\*</DefaultItemExcludes>
   </PropertyGroup>
 
   <ItemGroup>
