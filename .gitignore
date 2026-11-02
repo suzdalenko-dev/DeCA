@@ -1,5 +1,7 @@
-# Build
+
+# Compilaciones y archivos generados
 bin/
+obj/
 
 # Visual Studio
 .vs/
@@ -9,11 +11,3 @@ bin/
 # Logs
 *.log
 
-bin/*
-!bin/Release/
-bin/Release/*
-!bin/Release/net10.0/
-bin/Release/net10.0/*
-!bin/Release/net10.0/publish/
-!bin/Release/net10.0/publish/**
-obj/
