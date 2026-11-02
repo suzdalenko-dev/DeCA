@@ -12,4 +12,4 @@ dotnet build > bin
     Comprueba errores y advertencias.
     Genera los archivos compilados de tu aplicación.
 
-dotnet publish -c Release > obj Release
+dotnet publish -c Release > bin\Release\net10.0\publish\*
