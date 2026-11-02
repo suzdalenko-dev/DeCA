@@ -1,20 +1,23 @@
-﻿using Microsoft.EntityFrameworkCore;
-using MiAplicacionEF.DB;
-
 var builder = WebApplication.CreateBuilder(args);
 
-// Registrar los controladores de la API.
+// Add services to the container.
+
 builder.Services.AddControllers();
+// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+builder.Services.AddOpenApi();
 
-// Registrar Entity Framework Core y PostgreSQL.
-builder.Services.AddDbContext<AppDbContext>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("PostgreSql")));
-
-// Configurar Swagger.
-builder.Services.AddEndpointsApiExplorer();
 var app = builder.Build();
 
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
+{
+    app.MapOpenApi();
+}
 
-// Registrar los endpoints de los controladores.
+app.UseHttpsRedirection();
+
+app.UseAuthorization();
+
 app.MapControllers();
 
 app.Run();

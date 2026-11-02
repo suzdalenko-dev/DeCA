@@ -1,0 +1,6 @@
+@DeCa_HostAddress = http://localhost:5006
+
+GET {{DeCa_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

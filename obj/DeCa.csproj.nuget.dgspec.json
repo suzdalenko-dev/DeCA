@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\C#\\MiAplicacionEF\\MiAplicacionEF.csproj": {}
+    "E:\\C#\\DeCa\\DeCa\\DeCa.csproj": {}
   },
   "projects": {
-    "E:\\C#\\MiAplicacionEF\\MiAplicacionEF.csproj": {
+    "E:\\C#\\DeCa\\DeCa\\DeCa.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\C#\\MiAplicacionEF\\MiAplicacionEF.csproj",
-        "projectName": "MiAplicacionEF",
-        "projectPath": "E:\\C#\\MiAplicacionEF\\MiAplicacionEF.csproj",
-        "packagesPath": "C:\\Users\\alexei work\\.nuget\\packages\\",
-        "outputPath": "E:\\C#\\MiAplicacionEF\\obj\\",
+        "projectUniqueName": "E:\\C#\\DeCa\\DeCa\\DeCa.csproj",
+        "projectName": "DeCa",
+        "projectPath": "E:\\C#\\DeCa\\DeCa\\DeCa.csproj",
+        "packagesPath": "C:\\Users\\alexey\\.nuget\\packages\\",
+        "outputPath": "E:\\C#\\DeCa\\DeCa\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\alexei work\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\alexey\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -44,15 +44,9 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
+            "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
-              "version": "[10.0.13, )"
-            },
-            "Npgsql.EntityFrameworkCore.PostgreSQL": {
-              "target": "Package",
-              "version": "[10.0.3, )"
+              "version": "[10.0.5, )"
             }
           },
           "imports": [
