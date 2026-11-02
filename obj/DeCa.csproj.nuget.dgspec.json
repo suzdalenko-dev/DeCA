@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\C#\\DeCa\\DeCa\\DeCa.csproj": {}
+    "E:\\C#\\DeCa\\DeCa.csproj": {}
   },
   "projects": {
-    "E:\\C#\\DeCa\\DeCa\\DeCa.csproj": {
+    "E:\\C#\\DeCa\\DeCa.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\C#\\DeCa\\DeCa\\DeCa.csproj",
+        "projectUniqueName": "E:\\C#\\DeCa\\DeCa.csproj",
         "projectName": "DeCa",
-        "projectPath": "E:\\C#\\DeCa\\DeCa\\DeCa.csproj",
+        "projectPath": "E:\\C#\\DeCa\\DeCa.csproj",
         "packagesPath": "C:\\Users\\alexey\\.nuget\\packages\\",
-        "outputPath": "E:\\C#\\DeCa\\DeCa\\obj\\",
+        "outputPath": "E:\\C#\\DeCa\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\alexey\\AppData\\Roaming\\NuGet\\NuGet.Config"
