@@ -1,10 +1,7 @@
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-
 public class User
 {
     public int Id { get; set; }
-
     [Required]
     [EmailAddress]
     [MaxLength(255)]

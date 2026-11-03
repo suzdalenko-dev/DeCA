@@ -8,4 +8,8 @@ MonsterASP.NET: ConnectionStrings__DeCa mediante variables de entorno.
 
 Producción: ASPNETCORE_ENVIRONMENT=Production.
 
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 10.0.5
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 10.0.5
+
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 10.0.5
 */

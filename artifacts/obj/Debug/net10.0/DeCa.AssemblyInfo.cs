@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DeCa")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+93fcc39056324cc07b8da47d6bdc1c76de491b98")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3e3f92e9f715666d7143db0d77414c9243bee4b9")]
 [assembly: System.Reflection.AssemblyProductAttribute("DeCa")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DeCa")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
