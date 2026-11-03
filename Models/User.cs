@@ -1,6 +1,18 @@
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 public class User
 {
-    public int Id { get; set; } // tiene que ser un int para que sea autoincrementable
-    public string Email { get; set; }
-    public string Password { get; set; }
+    public int Id { get; set; }
+
+    [Required]
+    [EmailAddress]
+    [MaxLength(255)]
+    public string Email { get; set; } = string.Empty;
+    [Required]
+    public string Password { get; set; } = string.Empty;
+    [Required]
+    public string Token { get; set; } = string.Empty;
+    public DateTimeOffset CreatedAt { get; set; } = DateTimeOffset.UtcNow;
+    public DateTimeOffset? LastLoginAt { get; set; }
 }
