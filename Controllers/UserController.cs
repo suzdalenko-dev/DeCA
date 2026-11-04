@@ -1,15 +1,31 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 [ApiController]
 [Route("api/[controller]")]
 public class UserController : ControllerBase
 {
+    private readonly DeCaDbContext _context;
+     public UserController(DeCaDbContext context)
+    {
+        _context = context;
+    }
+
     // http://localhost:5006/
     [HttpGet("/")]
-    public IActionResult Index(){
+    public async Task<IActionResult> Index(){
+
+        var users = await _context.Users
+            .AsNoTracking()
+            .Where(u => u.Id > 0)
+            .OrderBy(u => u.Id)
+            .Select(u => new {u.Id, u.Email, u.CreatedAt, u.LastLoginAt })
+            .ToListAsync();
+        
         return Ok(new { 
             date = DateTime.Now,
-            info = "Alexey Suzdalenko"
+            info = "Alexey Suzdalenko",
+            users = users
         });
     }
 
