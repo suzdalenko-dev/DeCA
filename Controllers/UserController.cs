@@ -36,8 +36,8 @@ public class UserController : ControllerBase
         return Ok(new { 
             date = DateTime.Now,
             info = "Login successful",
-            email = email,
-            password = password
+            x = email,
+            y = password
         });
     }
 }
