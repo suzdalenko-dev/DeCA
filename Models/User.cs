@@ -6,10 +6,8 @@ public class User
     [EmailAddress]
     [MaxLength(255)]
     public string Email { get; set; } = string.Empty;
-    [Required]
-    public string Password { get; set; } = string.Empty;
-    [Required]
-    public string Token { get; set; } = string.Empty;
+    public string? Password { get; set; }
+    public string? Token { get; set; }
     public DateTimeOffset CreatedAt { get; set; } = DateTimeOffset.UtcNow;
     public DateTimeOffset? LastLoginAt { get; set; }
 }

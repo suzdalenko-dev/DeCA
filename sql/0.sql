@@ -10,6 +10,22 @@ Producción: ASPNETCORE_ENVIRONMENT=Production.
 
 dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 10.0.5
 dotnet add package Microsoft.EntityFrameworkCore.Design --version 10.0.5
+dotnet tool install --global dotnet-ef --version 10.0.5
 
-dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 10.0.5
+dotnet ef migrations add InitialCreate1
+dotnet ef database update
+
+public
+Tc4?+9LxaB@8
 */
+
+SELECT
+    TABLE_SCHEMA,
+    TABLE_NAME
+FROM INFORMATION_SCHEMA.TABLES
+WHERE TABLE_TYPE = 'BASE TABLE'
+ORDER BY TABLE_SCHEMA, TABLE_NAME
+;
+
+
+select * from users;
