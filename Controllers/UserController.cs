@@ -25,7 +25,7 @@ public class UserController : ControllerBase
         bool connected = await _context.Database.CanConnectAsync();
         
         return Ok(new { 
-            date = DateTime.Now,
+            date = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") is string ? DateTime.Parse(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")) : DateTime.Now,
             info = "Alexey Suzdalenko",
             users = users,
             connected = connected

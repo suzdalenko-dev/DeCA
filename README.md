@@ -13,3 +13,4 @@ dotnet build > bin
     Genera los archivos compilados de tu aplicación.
 
 dotnet publish -c Release > artifacts\bin\Release\net10.0\publish\*
+

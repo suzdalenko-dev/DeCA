@@ -8,6 +8,6 @@ public class User
     public string Email { get; set; } = string.Empty;
     public string? Password { get; set; }
     public string? Token { get; set; }
-    public DateTimeOffset CreatedAt { get; set; } = DateTimeOffset.UtcNow;
-    public DateTimeOffset? LastLoginAt { get; set; }
+    public DateTime CreatedAt { get; set; } = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") is string ? DateTime.Parse(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")) : DateTime.Now;
+    public DateTime? LastLoginAt { get; set; }
 }
