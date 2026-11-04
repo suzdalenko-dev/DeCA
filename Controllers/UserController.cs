@@ -22,10 +22,13 @@ public class UserController : ControllerBase
             .Select(u => new {u.Id, u.Email, u.CreatedAt, u.LastLoginAt })
             .ToListAsync();
         
+        bool connected = await _context.Database.CanConnectAsync();
+        
         return Ok(new { 
             date = DateTime.Now,
             info = "Alexey Suzdalenko",
-            users = users
+            users = users,
+            connected = connected
         });
     }
 
